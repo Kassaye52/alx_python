@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print('\"Programming is like building a multilingual puzzle')
+# Python script to print a sentence
+print("\"Programming is like building a multilingual puzzle")
