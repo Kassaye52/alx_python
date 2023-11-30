@@ -3,7 +3,7 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 
-last_digit = abs(number) % 10  # Get the last digit (absolute value in case number is negative)
+last_digit = number % 10 if number > 0 else -(-number % 10)  # Get the last digit with the same sign as the number
 
 if last_digit > 5:
     message = "and is greater than 5"
@@ -13,4 +13,5 @@ else:
     message = "and is less than 6 and not 0"
 
 print(f"Last digit of {number} is {last_digit} {message}")
+
 
