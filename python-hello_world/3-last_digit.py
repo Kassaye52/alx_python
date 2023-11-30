@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import random
+number = random.randint(-10000, 10000)
+# YOUR CODE HERE
+if number[-1] == 5:
+    print("Last digit of {} is positive".format(number[]))
+elif number == 0:
+    print("{} is zero".format(number))
+elif number < 0:
+    print("{} is negative".format(number))
+else:
+    print("wrong type")
