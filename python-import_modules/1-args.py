@@ -8,7 +8,7 @@ def main():
         print("Number of argument(s): 0.")
     else:
         argument_label = "argument" if num_args == 1 else "arguments"
-        print("Number of {}(s): {}".format(argument_label, num_args))
+        print("{} argument:".format(num_args, argument_label))
 
         for i, arg in enumerate(sys.argv[1:], start=1):
             print("{}: {}".format(i, arg))
