@@ -9,6 +9,4 @@ def update_dictionary(a_dictionary, key, value):
     # Update the dictionary. This will either replace the value for an existing key,
     # or add the key-value pair if the key does not exist.
     a_dictionary[key] = value
-    
-    # Print the updated dictionary.
-    print(f"Updated dictionary: {a_dictionary}")
+    return a_dictionary
