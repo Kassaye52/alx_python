@@ -1,6 +1,6 @@
 def update_dictionary(a_dictionary, key, value):
     """
-    Update or add a key-value pair in a dictionary.
+    Update or add a key-value pair in a dictionary and print the dictionary.
 
     :param a_dictionary: dict - The dictionary to be updated.
     :param key: str - The key to update or add.
@@ -9,4 +9,6 @@ def update_dictionary(a_dictionary, key, value):
     # Update the dictionary. This will either replace the value for an existing key,
     # or add the key-value pair if the key does not exist.
     a_dictionary[key] = value
-
+    
+    # Print the updated dictionary.
+    print(f"Updated dictionary: {a_dictionary}")
