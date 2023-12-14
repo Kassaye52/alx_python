@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Example of documentation
+"""
 class Square:
     """Class that defines a square with a private size attribute."""
     def __init__(self, size):
