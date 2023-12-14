@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-"""
-This is a documentation for 5. Integer validator
-"""
 class BaseGeometry:
     """BaseGeometry class for handling geometrical operations and validation."""
 
