@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+This is a documentation for 1. Size validation
+"""
 class Square:
     """Class that defines a square with a private size attribute."""
 

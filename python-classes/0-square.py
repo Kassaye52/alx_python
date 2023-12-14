@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Example of documentation
+This is a documentation for 0. Square with size
 """
 class Square:
     """Class that defines a square with a private size attribute."""
