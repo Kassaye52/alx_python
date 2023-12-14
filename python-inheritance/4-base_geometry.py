@@ -6,6 +6,8 @@ class BaseGeometry:
     """
     BaseGeometry class for handling geometrical operations.
     """
+    """An empty class BaseGeometry."""
+    pass
     
     def area(self):
         """
