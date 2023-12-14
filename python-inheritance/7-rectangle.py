@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-This is a documentation for 6. Rectangle
+This is a documentation for 7. Full rectangle
 """
-
 class BaseGeometry:
     """BaseGeometry class for handling geometrical operations and validation."""
 
@@ -35,12 +34,16 @@ class Rectangle(BaseGeometry):
         Args:
         width (int): The width of the rectangle.
         height (int): The height of the rectangle.
-
-        Raises:
-        TypeError: If width or height is not an integer.
-        ValueError: If width or height is less or equal to 0.
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
+
+    def area(self):
+        """Return the area of the rectangle."""
+        return self.__width * self.__height
+
+    def __str__(self):
+        """Return the rectangle description."""
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
