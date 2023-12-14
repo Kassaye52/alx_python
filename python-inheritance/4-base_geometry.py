@@ -3,9 +3,7 @@
 This is a documentation for 4. Improve Geometry
 """
 class BaseGeometry:
-    """Class that defines base geometry."""
-    
     def area(self):
-        """Raise an exception with the message for unimplemented method."""
+        """Raises an Exception with a message."""
         raise Exception("area() is not implemented")
 
