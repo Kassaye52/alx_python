@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-This is a documentation for 3. Geometry module
+This module contains the definition of the BaseGeometry class.
 """
+
 class BaseGeometry:
+    """An empty class BaseGeometry."""
     pass
