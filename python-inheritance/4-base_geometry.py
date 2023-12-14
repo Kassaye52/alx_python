@@ -3,14 +3,9 @@
 This is a documentation for 4. Improve Geometry
 """
 class BaseGeometry:
-    """
-    BaseGeometry class for handling geometrical operations.
-    """
-    """An empty class BaseGeometry."""
-    pass
+    """Class that defines base geometry."""
     
     def area(self):
-        """
-        Raises an Exception with a message if the method is not implemented.
-        """
+        """Raise an exception with the message for unimplemented method."""
         raise Exception("area() is not implemented")
+
