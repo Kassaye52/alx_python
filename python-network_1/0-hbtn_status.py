@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+""" 
+0. What's my status? #1
+
+Write a Python script that fetches https://alu-intranet.hbtn.io/status 
+"""
 import requests
 
 def fetch_url(url):
