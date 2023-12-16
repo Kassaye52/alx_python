@@ -112,5 +112,21 @@ class Rectangle(Base):
         print("\n" * self.y, end="")  
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)  
+    
+    def update(self, *args):
+        """
+        Update the attributes of the Rectangle instance using no-keyword arguments.
 
+        Args:
+            *args: A variable length argument list, where:
+                   1st argument is for id
+                   2nd argument is for width
+                   3rd argument is for height
+                   4th argument is for x
+                   5th argument is for y
+        """
+        attr_order = ['id', 'width', 'height', 'x', 'y']
+        for attr, value in zip(attr_order, args):
+            if hasattr(self, attr):
+                setattr(self, attr, value)
 
