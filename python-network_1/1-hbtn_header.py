@@ -10,7 +10,8 @@ import sys
 
 def fetch_x_request_id(url):
     """
-    Fetches the URL and prints the value of 'X-Request-Id' from the response headers.
+    Fetches the URL and prints the value of 'X-Request-Id' from the response headers
+    only if it exists.
 
     Args:
         url (str): The URL to fetch.
@@ -23,13 +24,11 @@ def fetch_x_request_id(url):
     # Get 'X-Request-Id' from response headers
     x_request_id = response.headers.get('X-Request-Id')
     
+    # Print 'X-Request-Id' only if it exists
     if x_request_id:
         print(x_request_id)
-    else:
-        print("X-Request-Id not found in the response headers.")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         fetch_x_request_id(sys.argv[1])
-    else:
-        print("Please provide a URL as a command-line argument.")
+
