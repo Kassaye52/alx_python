@@ -24,13 +24,8 @@ def fetch_github_user_id(username, token):
     if response.status_code == 200:
         user_data = response.json()
         print(user_data.get("id"))
-    else:
-        print("Failed to fetch user data")
 
 if __name__ == "__main__":
     if len(sys.argv) == 3:
         fetch_github_user_id(sys.argv[1], sys.argv[2])
-    else:
-        print("Usage: script.py username personal_access_token")
-
 
