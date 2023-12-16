@@ -21,8 +21,7 @@ def fetch_url(url):
     # Displaying the body of the response as per the specified format
     print("Body response:")
     print(f"\t- type: {type(response.text)}")
-    print(f"\t- content: {response.content}")
-    print(f"\t- utf8 content: {response.text}")
+    print(f"\t- content: {response.text}")
 
 if __name__ == "__main__":
-    fetch_url("https://alu-intranet.hbtn.io/status")
+    fetch_url("https://intranet.hbtn.io/status")
