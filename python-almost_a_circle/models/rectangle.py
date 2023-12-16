@@ -129,4 +129,29 @@ class Rectangle(Base):
         for attr, value in zip(attr_order, args):
             if hasattr(self, attr):
                 setattr(self, attr, value)
+                
+    def update(self, *args, **kwargs):
+        """
+        Update the attributes of the Rectangle instance.
+
+        Args:
+            *args: A variable length argument list, where:
+                   1st argument is for id
+                   2nd argument is for width
+                   3rd argument is for height
+                   4th argument is for x
+                   5th argument is for y
+            **kwargs: A variable length keyword argument dictionary. Used to update attributes if *args is empty.
+        """
+        attr_order = ['id', 'width', 'height', 'x', 'y']
+
+        if args:
+            for attr, value in zip(attr_order, args):
+                if hasattr(self, attr):
+                    setattr(self, attr, value)
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
+
 
